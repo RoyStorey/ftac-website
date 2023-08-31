@@ -1,0 +1,28 @@
+.footer{
+    width:100%;
+    min-height:20vh;
+    display:flex;
+    flex-direction: column;
+    padding-top:5vh;
+    background:black;
+    color:white;
+    .footer-row{
+        width:100%;
+        display:flex;
+        flex:1;
+        justify-content: center;
+        align-items: center;
+        .container{
+            width:20%;
+            display:flex;
+            justify-content: space-between;
+            h5:hover{
+                cursor: pointer;
+                color:rgba(255,255,255,.8);
+            }
+        }
+        :nth-child(2){
+            min-height:auto;
+        }
+    }
+}
