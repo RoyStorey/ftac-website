@@ -1,0 +1,52 @@
+.body-container-contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-image: url("../media/background1.jpg");
+}
+.body-container-contact .form-container {
+  margin-top: 9vh;
+  background: rgba(0, 0, 0, 0.606);
+  color: white;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: -moz-min-content;
+  width: min-content;
+  box-sizing: border-box;
+  min-width: 50%;
+  padding: 4rem;
+}
+.body-container-contact .form-container input {
+  background-color: rgba(255, 255, 255, 0.894);
+  border: none;
+  height: 3vh;
+  width: 25vw;
+  border-radius: 5px;
+}
+.body-container-contact .form-container textarea {
+  height: 5vh;
+  width: 25vw;
+  transition: 0.5s;
+}
+.body-container-contact .form-container textarea:focus {
+  height: 20vh;
+  width: 40vw;
+}
+.body-container-contact .form-container .form-submit {
+  height: 4vh;
+  width: 10vw;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.894);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.body-container-contact .form-container .form-submit:active {
+  transform: scale(0.9);
+  background-color: rgb(171, 171, 171);
+}/*# sourceMappingURL=contact.css.map */
