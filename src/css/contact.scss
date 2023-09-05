@@ -3,7 +3,9 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-image: url("../media/background1.jpg");
+  // background-image: url("../media/background1.jpg");
+  background-color:rgb(42, 42, 60);
+
 
 
 
@@ -24,17 +26,28 @@
     padding: 4rem;
 
     input {
-      background-color: rgba(255, 255, 255, 0.894);
-      border: none;
+      background:none;
+      color:white;
+      border:none;
+      border-bottom: 1px solid white;
       height: 3vh;
       width: 25vw;
-      border-radius: 5px;
+      border-radius: 0px;
+      padding-inline:1rem;
+      box-sizing: border-box;
     }
 
     textarea {
+      background:none;
+      color:white;
+      border:none;
+      border-right:1px solid white;
+      border-bottom:1px solid white;
       height: 5vh;
       width: 25vw;
       transition: 0.5s;
+      padding-inline:1rem;
+      box-sizing: border-box;
     }
 
     textarea:focus {

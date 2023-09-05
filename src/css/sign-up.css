@@ -1,0 +1,16 @@
+.sign-up-container {
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.606);
+  border: 1px solid rgba(255, 255, 255, 0.295);
+  z-index: 5;
+  width: 20%;
+  height: 10vh;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+}/*# sourceMappingURL=sign-up.css.map */

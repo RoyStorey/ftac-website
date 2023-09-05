@@ -14,6 +14,7 @@
     width: 80%;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top:2rem;
   }
 }
 
@@ -25,20 +26,22 @@
   gap: 1rem;
 
   .temp-img {
-    background-color: red;
-    width: 40%;
+    // background-color: red;
+    border:1px solid white;
+    width: 50%;
   }
 }
 
 .resources {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 
 }
 
 .body-container-resources {
-  background: url('../media/background1.jpg');
+  // background: url('../media/background1.jpg');
+  background-color:rgb(42, 42, 60);
   background-position: 0px;
   display: flex;
   justify-content: center;

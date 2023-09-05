@@ -1,5 +1,6 @@
 .body-container-about {
-  background-image: url("../media/background1.jpg");
+  background-color:rgb(42, 42, 60);
+  // background-image: url("../media/background1.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +9,7 @@
 .about-content-container {
   margin-top: 9vh;
   background: rgba(0, 0, 0, 0.606);
+  box-shadow: 2px 2px 10px rgba(0,0,0,.3);
   color: white;
   backdrop-filter: blur(10px);
   background-size: cover;
@@ -60,6 +62,9 @@
         flex-direction: column;
         align-self: end;
       }
+      p{
+        line-height:1.5rem;
+      }
 
       .info-container {
         background-color: rgb(0, 0, 0, .606);
@@ -71,6 +76,7 @@
 
         p {
           margin: 0;
+          line-height:1.5rem;
         }
       }
 

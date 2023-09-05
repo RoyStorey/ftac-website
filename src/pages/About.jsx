@@ -6,6 +6,7 @@ import { useState } from 'react'
 import '../css/about.css'
 import Bergman from "../media/theberg.jpg"
 import Lindsey from "../media/lindsey.webp"
+import SignUp from '../components/SignUpNow'
 
 export default function About() {
 
@@ -13,6 +14,7 @@ export default function About() {
   return (
     <>
       <Header title={"Who We Are"} />
+      <SignUp />
       <div className='body-container-about'>
         <div className='about-content-container'>
           <div className='about-header-container'>
@@ -22,7 +24,7 @@ export default function About() {
 
             <div className='profile profile-left'>
               <div className='text-container'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eu ultrices vitae auctor. Vitae tempus quam pellentesque nec nam.</p>
+                <p>"FTAC: Where the transition from civilian to Airman is a journey we'll guide you through with dedication and a touch of humor."</p>
                 <div className='info-container'>
                   <p>MTSgt Anthony Bergman</p>
                   <p>Senior Instructor</p>
@@ -35,7 +37,7 @@ export default function About() {
 
             <div className='profile profile-right'>
               <div className='text-container'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eu ultrices vitae auctor. Vitae tempus quam pellentesque nec nam.</p>
+                <p>"FTAC: Where the transition from civilian to Airman is a journey we'll guide you through with dedication and a touch of esprit de corps."</p>
                 <div className='info-container'>
                   <p>MTSgt Anthony Bergman</p>
                   <p>Senior Instructor</p>

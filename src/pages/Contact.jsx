@@ -2,6 +2,7 @@ import Footer from '../components/Footer'
 import Header from '../components/header'
 import Slideshow from '../components/Slideshow'
 import LearnMore from '../components/LearnMore'
+import SignUp from '../components/SignUpNow'
 import { useState } from 'react'
 import '../css/contact.css'
 
@@ -11,6 +12,7 @@ export default function Contact() {
   return (
     <>
       <Header title={'Contact Us'} />
+      <SignUp />
       <div className='body-container-contact'>
         <form className='form-container'>
 
@@ -19,7 +21,7 @@ export default function Contact() {
           <h5>Return Email</h5>
           <input className="form-input" placeholder="Please enter your email" required='true' />
           <h5>Phone</h5>
-          <input className="form-input" placeholder="(xxx-xxx-xxx)" required='true' />
+          <input className="form-input" placeholder="(xxx-xxx-xxxx)" required='true' />
           <h5>Please enter what you need help with</h5>
           <textarea className="form-input" placeholder="Course Enrollment, More information or Resources that may not be on our resource page ..etc" required='true' />
           <button className='form-submit'>Submit</button>

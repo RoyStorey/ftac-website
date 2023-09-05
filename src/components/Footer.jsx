@@ -5,10 +5,10 @@ function Footer() {
         <footer className="footer">
             <div className='footer-row'>
                 <div className='container'>
-                    <h5>Home</h5>
-                    <h5>Resources</h5>
-                    <h5>Who We Are</h5>
-                    <h5>Contact</h5>
+                    <a href='/'><h5>Home</h5></a>
+                    <a href='/about'><h5>Who We Are</h5></a>
+                    <a href='/resources'><h5>Resources</h5></a>
+                    <a href='/contact'><h5>Contact</h5></a>
                 </div>
             </div>
             <div className='footer-row'>
