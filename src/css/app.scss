@@ -16,3 +16,19 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+.mobile-only{
+    display:none !important;
+}
+.desktop-only{
+    display:flex !important;
+}
+
+@media (max-width: 768px) {
+    .mobile-only{
+        display:flex !important;
+    }
+    .desktop-only{
+        display:none !important;
+    }
+  }

@@ -10,6 +10,8 @@
   justify-content: space-around;
   align-items: center;
   z-index: 5;
+  padding: 0.5rem;
+  box-sizing: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -20,11 +22,10 @@
 }
 .header .header-image-container {
   width: 25%;
+  height: 100%;
 }
 .header .header-image-container .header-image {
-  height: auto;
-  width: 18%;
-  min-width: 70px;
+  height: 100%;
 }
 .header .header-links {
   width: 25%;
@@ -39,4 +40,14 @@
 .header .header-links a:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .bars-icon {
+    padding-inline: 1rem;
+  }
+  .header-title {
+    text-align: center;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=header.css.map */

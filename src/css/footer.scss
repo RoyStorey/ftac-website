@@ -30,3 +30,15 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .footer{
+        .footer-row{
+            .container {
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}
