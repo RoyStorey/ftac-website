@@ -1,7 +1,7 @@
 function Resource(props) {
   return (
     <div className="resource-block">
-      <div className="temp-img"></div>
+      <div className="temp-img desktop-only"></div>
       <div className="info-container">
         <h5>{props.resourceobject.name}</h5>
         <p>{props.resourceobject.description}</p>

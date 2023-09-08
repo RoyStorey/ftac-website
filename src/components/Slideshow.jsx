@@ -9,6 +9,7 @@ const divStyle = {
   justifyContent: 'center',
   backgroundSize: 'cover',
   height: '100vh',
+  backgroundPosition:'center',
 }
 
 const eventsList = [

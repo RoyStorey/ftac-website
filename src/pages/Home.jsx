@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Slideshow from '../components/Slideshow'
 import LearnMore from '../components/LearnMore'
 import SignUp from '../components/SignUpNow'
+import SideNavbar from '../components/SideNavbar'
 import { useState } from 'react'
 import '../css/app.css'
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Slideshow />
         {/* <LearnMore /> */}
       </div>
+      <SideNavbar />
       <Footer />
     </>
   )

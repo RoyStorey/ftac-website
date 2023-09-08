@@ -14,6 +14,15 @@ export default function Header(props) {
     navigate('/' + e.target.id)
   }
 
+  function toggleNavbar() {
+    var navbar = document.getElementById('nav-bar');
+    if (navbar.style.display == 'flex') {
+      navbar.style.display = 'none';
+    } else {
+      navbar.style.display = 'flex';
+    }
+  }
+
   return (
     <div className="header">
       <span className="header-image-container">
@@ -26,7 +35,7 @@ export default function Header(props) {
         <a className='header-link' id='resources' onClick={e => HandleClick(e)}>Resources</a>
         <a className='header-link' id='contact' onClick={e => HandleClick(e)}>Contact us</a>
       </div>
-      <FontAwesomeIcon icon={faBars} className='bars-icon mobile-only'/>
+      <FontAwesomeIcon onClick={toggleNavbar} icon={faBars} className='bars-icon mobile-only'/>
     </div>
   )
 }

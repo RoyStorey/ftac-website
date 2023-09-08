@@ -21,8 +21,6 @@
   width: min-content;
   padding: 2rem;
   box-sizing: border-box;
-  height: 100%;
-  min-width: 50%;
 }
 .about-content-container .about-header-container {
   display: flex;
@@ -32,6 +30,12 @@
   padding: 2rem;
   box-sizing: border-box;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-content-container .about-paragraph-container .about-paragraph {
+  text-indent: 1rem;
 }
 .about-content-container .about-paragraph-container h1 {
   margin-top: 0px;
@@ -44,6 +48,15 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   gap: 4rem;
   padding-bottom: 4rem;
+}
+.about-content-container .profiles .profile {
+  display: flex;
+  flex-direction: column;
+}
+.about-content-container .profiles .profile .row-one {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 .about-content-container .profiles .profile img {
   height: 40vh;
@@ -61,27 +74,67 @@
   line-height: 1.5rem;
 }
 .about-content-container .profiles .profile .info-container {
-  background-color: rgba(0, 0, 0, 0.606);
+  background-color: rgba(45, 45, 66, 0.606);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 0.5vh;
   padding: 1rem;
   box-sizing: border-box;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .about-content-container .profiles .profile .info-container p {
   margin: 0;
   line-height: 1.5rem;
 }
-.about-content-container .profiles .profile-right {
-  display: flex;
-  align-items: center;
+.about-content-container .profiles .profile:nth-child(even) .row-one {
   flex-direction: row-reverse;
-  gap: 2rem;
 }
-.about-content-container .profiles .profile-left {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 2rem;
+
+@media (max-width: 768px) {
+  .about-content-container {
+    width: 100%;
+  }
+  .about-content-container .profiles {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-content-container .profiles .profile {
+    gap: 1rem;
+  }
+  .about-content-container .profiles .profile img {
+    height: 30vh;
+    display: flex;
+    flex: 1;
+    aspect-ratio: 1/1.8;
+  }
+  .about-paragraph-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .about-paragraph-container .about-paragraph {
+    text-indent: 1rem;
+  }
+  .row-one:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .row-two {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(45, 45, 66, 0.606);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row-two p {
+    margin: 0px;
+  }
 }/*# sourceMappingURL=about.css.map */
