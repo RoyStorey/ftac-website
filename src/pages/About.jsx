@@ -1,18 +1,32 @@
 import Footer from '../components/Footer'
-import Header from '../components/header'
-import Slideshow from '../components/Slideshow'
-import LearnMore from '../components/LearnMore'
+import Header from '../components/Header'
 import SignUp from '../components/SignUpNow'
 import SideNavbar from '../components/SideNavbar'
-import { useState } from 'react'
+import Profile from '../components/Profile'
 import '../css/about.css'
 import Bergman from "../media/theberg.jpg"
 import Lindsey from "../media/lindsey.webp"
 
-
-
 export default function About() {
 
+  let exampleProfile = {
+    quote:`"FTAC: Where the transition from civilian to Airman is a journey we'll guide you through with dedication and a touch of esprit de corps."`,
+    rank:'TSgt',
+    name:'Valerie Lindsey',
+    role:'Senior Coordinator',
+    email:'valerie.lindsey@us.af.mil',
+    phone:'1-800-555-8152',
+    photo:Lindsey
+  }
+  let exampleProfile2 = {
+    quote:`"FTAC: Where the transition from civilian to Airman is a journey we'll guide you through with dedication and a touch of esprit de corps."`,
+    rank:'TSgt',
+    name:'Valerie Lindsey',
+    role:'Senior Coordinator',
+    email:'valerie.lindsey@us.af.mil',
+    phone:'1-800-555-8152',
+    photo:Bergman
+  }
 
   return (
     <>
@@ -21,46 +35,8 @@ export default function About() {
       <div className='body-container-about'>
         <div className='about-content-container'>
           <div className='profiles'>
-          <div className='profile'>
-              <div className='row-one'>
-                <div className='text-container'>
-                  <p>"FTAC: Where the transition from civilian to Airman is a journey we'll guide you through with dedication and a touch of esprit de corps."</p>
-                  <div className='info-container desktop-only'>
-                    <p>MTSgt Anthony Bergman</p>
-                    <p>Senior Instructor</p>
-                    <p>anthony.bergman@us.af.mil</p>
-                    <p>1-800-555-8152</p>
-                  </div>
-                </div>
-              <img className='profile-picture' src={Lindsey} alt='bergman' />
-              </div>
-              <div className='row-two mobile-only'>
-                <p>MTSgt Anthony Bergman</p>
-                <p>Senior Instructor</p>
-                <p>anthony.bergman@us.af.mil</p>
-                <p>1-800-555-8152</p></div>
-            </div>
-
-            <div className='profile'>
-              <div className='row-one'>
-                <div className='text-container'>
-                  <p>"FTAC: Where the transition from civilian to Airman is a journey we'll guide you through with dedication and a touch of esprit de corps."</p>
-                  <div className='info-container desktop-only'>
-                    <p>MTSgt Anthony Bergman</p>
-                    <p>Senior Instructor</p>
-                    <p>anthony.bergman@us.af.mil</p>
-                    <p>1-800-555-8152</p>
-                  </div>
-                </div>
-              <img className='profile-picture' src={Bergman} alt='bergman' />
-              </div>
-              <div className='row-two mobile-only'>
-                <p>MTSgt Anthony Bergman</p>
-                <p>Senior Instructor</p>
-                <p>anthony.bergman@us.af.mil</p>
-                <p>1-800-555-8152</p></div>
-            </div>
-
+            <Profile profile={exampleProfile}/>
+            <Profile profile={exampleProfile2}/>
           </div>
           <div className='about-paragraph-container'>
             <h1>Our Mission</h1>

@@ -1,10 +1,8 @@
 import Footer from '../components/Footer'
-import Header from '../components/header'
+import Header from '../components/Header'
 import Slideshow from '../components/Slideshow'
-import LearnMore from '../components/LearnMore'
 import SignUp from '../components/SignUpNow'
 import SideNavbar from '../components/SideNavbar'
-import { useState } from 'react'
 import '../css/app.css'
 
 export default function Home() {
@@ -16,7 +14,6 @@ export default function Home() {
       <SignUp />
       <div className='body-container'>
         <Slideshow />
-        {/* <LearnMore /> */}
       </div>
       <SideNavbar />
       <Footer />

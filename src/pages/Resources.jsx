@@ -1,17 +1,17 @@
 import Footer from '../components/Footer'
-import Header from '../components/header'
-import Slideshow from '../components/Slideshow'
-import LearnMore from '../components/LearnMore'
+import Header from '../components/Header'
 import SignUp from '../components/SignUpNow'
 import SideNavbar from '../components/SideNavbar'
-import { useState } from 'react'
 import '../css/app.css'
 import '../css/resources.css'
 import Resource from '../components/Resource'
 
 export default function Resources() {
 
-  const exampleResource = { name: 'Example Resource', description: 'The FTAC finance class equips new Air Force members with essential financial skills, covering budgeting, money management, and future planning to ensure responsible financial decision-making throughout their military careers.' }
+  const exampleResource = { 
+    name: 'Example Resource',
+    description: 'The FTAC finance class equips new Air Force members with essential financial skills, covering budgeting, money management, and future planning to ensure responsible financial decision-making throughout their military careers.'
+  }
 
   return (
     <>
